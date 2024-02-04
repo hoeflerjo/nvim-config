@@ -12,10 +12,6 @@ return {
                 lsp_zero.default_keymaps({ buffer = bufnr })
             end)
 
-            lsp_zero.ensure_installed({
-                'clangd',
-                'rust_analyzer',
-            })
 
             lsp_zero.set_sign_icons({
                 error = '✘',
