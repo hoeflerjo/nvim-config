@@ -1,10 +1,8 @@
 return {
-  -- Harpoon plugin configuration
-  {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
     lazy = false,
-    requires = { "nvim-lua/plenary.nvim" }, -- if harpoon requires this
+    requires = { "nvim-lua/plenary.nvim" },
     config = function()
       require("harpoon").setup({})
 
@@ -75,6 +73,5 @@ return {
         desc = "harpoon to file 4",
       },
     },
-  },
 }
 
