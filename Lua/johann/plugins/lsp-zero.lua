@@ -12,6 +12,18 @@ return {
                 lsp_zero.default_keymaps({ buffer = bufnr })
             end)
 
+            lsp_zero.ensure_installed({
+                'clangd',
+                'rust_analyzer',
+            })
+
+            lsp_zero.set_sign_icons({
+                error = '✘',
+                warn = '▲',
+                hint = '⚑',
+                info = ''
+            })
+
             --- if you want to know more about lsp-zero and mason.nvim
             --- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
             require('mason').setup({})
